@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>π Movie Logo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+        body {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 42px;
+            color: #ddd;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .pi-symbol {
+            font-size: 50px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .film-reel {
+            width: 30px;
+            height: 30px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5f/Film_Reel_icon.svg'); /* Film Reel Image */
+            background-size: cover;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <span class="pi-symbol">π</span>
+        <span>M</span>
+        <span class="film-reel"></span>
+        <span>vie</span>
+    </div>
+</body>
+</html>

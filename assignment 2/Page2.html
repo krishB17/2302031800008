@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Movie Search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: black;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo span {
+            color: red;
+            font-size: 28px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: gray;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            background: orange;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-icon::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: navy;
+            border-radius: 50%;
+        }
+        .divider {
+            width: 90%;
+            height: 2px;
+            background: gray;
+            margin: 10px auto;
+        }
+        .search-container {
+            margin-top: 40px;
+        }
+        .search-box {
+            width: 50%;
+            height: 150px;
+            background: gray;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            font-size: 18px;
+            color: black;
+        }
+        .search-btn {
+            margin-top: 20px;
+            padding: 10px 30px;
+            font-size: 20px;
+            background: gray;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo"><span>π</span> Movie</div>
+        <div class="nav-links">
+            <a href="DashBoard.html">Home</a>
+            <a href="#">About Us</a>
+        </div>
+        <div class="profile-icon"></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Input text....">
+        <button class="search-btn">Search</button>
+    </div>
+
+</body>
+</html>
